@@ -28,7 +28,7 @@
                 <label for="value" class="mr-3">Значение</label>
                 <input type="text" class="form-control" id="value" v-model="form.value">
             </div>
-            <button type="submit" class="btn btn-primary">Создать</button>
+            <button type="submit" class="btn btn-primary" :disabled="!canCreate">Создать</button>
         </form>
 
         <div v-if="contacts.length">
