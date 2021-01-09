@@ -38,6 +38,9 @@ new Vue({
         markContact(id) {
             const contact = this.contacts.find(t => t.id === id);
             contact.marked = true;
+        },
+        removeContact(id) {
+            this.contacts = this.contacts.filter(t => t.id !== id);
         }
     }
 })
