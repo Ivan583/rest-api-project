@@ -8,12 +8,7 @@ new Vue({
                 name: '',
                 value: ''
             },
-            contacts: [{
-                id: 1,
-                name: "User",
-                value: "8-921-100-20-30",
-                marked: false
-            }]
+            contacts: []
         }
     },
     computed: {
