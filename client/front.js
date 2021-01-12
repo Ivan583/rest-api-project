@@ -61,6 +61,6 @@ async function request(url, method = 'GET', data = null) {
         });
         return await response.json();
     } catch (err) {
-        console.warn('Error:', e.message);
+        console.warn('Error:', err.message);
     }
 }
